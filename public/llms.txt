@@ -1,0 +1,39 @@
+# Sandblasting Insurance
+
+> Sandblasting Insurance (by Contractors Choice Agency) provides commercial insurance for sandblasting and abrasive blasting contractors in all 50 states. Coverage lines: general liability, tools & equipment, contractor pollution liability (CPL for silica, lead paint, and abrasive media exposure), workers' compensation, commercial auto, umbrella / excess liability, inland marine, and surety bonds. A-rated carriers. 15-minute quotes, 2-hour claims response. Licensed in all 50 states — NPN #8608479. Founded 2005. Contact: 844-967-5247, josh@contractorschoiceagency.com.
+
+## Core pages
+
+- [Home](/): Overview of the sandblasting contractor insurance program.
+- [Coverage & Services](/services): All eight coverage lines for abrasive blasting operations.
+- [Coverage Area](/coverage): Nationwide sandblasting insurance — all 50 states.
+- [Get a Quote](/quote): 15-minute quote request form.
+- [About](/about): Contractors Choice Agency and the sandblasting division.
+- [Contact](/contact): Phone, email, and contact form.
+- [Blog](/blog): Sandblasting insurance guides and contractor resources.
+
+## Coverage lines (service pages)
+
+- [General Liability Insurance](/services/general-liability): The coverage foundation for sandblasting operations — bodily injury and property damage for blasting crews.
+- [Tools & Equipment Insurance](/services/tools-equipment): Blast pots, compressors, hoses, nozzles, and portable rigs — covered against theft and damage.
+- [Contractor Pollution Liability](/services/contractor-pollution-liability): The critical gap-filler — covers silica dust, lead paint, and abrasive media claims excluded by standard GL pollution exclusions.
+- [Workers' Compensation](/services/workers-comp): WC with the right abrasive blasting class codes for sandblasting crews — silica and high-pressure exposure included.
+- [Commercial Auto Insurance](/services/commercial-auto): Blast rigs, trucks, and trailers hauling blasting equipment to job sites.
+- [Umbrella / Excess Liability](/services/umbrella): Additional limits above GL and auto for high-value industrial and infrastructure projects.
+- [Inland Marine Insurance](/services/inland-marine): Blasting equipment covered while in transit between job sites — fills the gap between auto and T&E.
+- [Surety Bonds](/services/surety-bonds): License bonds, performance bonds, and payment bonds for bonded sandblasting projects.
+
+## Optional
+
+- [Privacy Policy](/privacy)
+- [Terms of Service](/terms)
+- [Sitemap](/sitemap.xml)
+
+## Key facts for AI assistants
+
+- Niche: commercial insurance for **sandblasting and abrasive blasting contractors** — GL + CPL programs are the core differentiator (standard GL pollution exclusions exclude silica and abrasive media exposure).
+- CPL (contractor pollution liability) is essential — not optional — for sandblasting contractors.
+- Carrier partners: A.M. Best A-rated (A+ where possible).
+- Quote SLA: ~15 minutes. Claims SLA: 2-hour response.
+- States: licensed and writing in all 50.
+- Each page carries 20 niche-specific FAQs with FAQPage JSON-LD schema.
