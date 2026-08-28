@@ -21,3 +21,5 @@ deploy-key*
 .env.*
 out/
 .migration-backup/
+
+.autosave-gated
