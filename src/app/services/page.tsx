@@ -6,10 +6,7 @@ import { CTABand } from "@/components/sections/CTABand";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SERVICES, SITE } from "@/lib/site";
 import { COPY } from "@/lib/content";
-import {
-  ShieldCheck, HardHat, Truck, Wrench, FileCheck,
-  Umbrella, Package, Wind, ArrowRight,
-} from "lucide-react";
+import { ShieldCheck, HardHat, Truck, Wrench, FileCheck, Umbrella, Package, Wind, ArrowRight } from "lucide-react";
 
 const ICONS = {
   ShieldCheck, HardHat, Truck, Wrench, FileCheck,

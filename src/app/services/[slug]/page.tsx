@@ -8,11 +8,7 @@ import { CTABand } from "@/components/sections/CTABand";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SERVICES, SITE } from "@/lib/site";
 import { SERVICE_DETAIL, GENERAL_FAQS, COPY } from "@/lib/content";
-import {
-  ShieldCheck, HardHat, Truck, Wrench, FileCheck,
-  Umbrella, Package, Wind,
-  CheckCircle2, ArrowRight, ArrowLeft, Users, Target,
-} from "lucide-react";
+import { ShieldCheck, HardHat, Truck, Wrench, FileCheck, Umbrella, Package, Wind, CheckCircle2, ArrowRight, ArrowLeft, Users, Target } from "lucide-react";
 
 const ICONS = {
   ShieldCheck, HardHat, Truck, Wrench, FileCheck,
