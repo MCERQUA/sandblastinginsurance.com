@@ -7,7 +7,11 @@ import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SITE } from "@/lib/site";
 import { US_STATES, QUOTE_SERVICE_TYPES, YEARS_OPTIONS, COPY } from "@/lib/content";
+import { AcordFields } from "@/components/forms/AcordFields";
+import { ACORD_FIELDS } from "@/lib/acord-fields";
 import { CheckCircle2, ShieldCheck, ArrowRight, Phone, Clock, Zap, MapPin } from "lucide-react";
+
+const ACORD_INITIAL: Record<string, string> = Object.fromEntries(ACORD_FIELDS.map((f) => [f.name, ""]));
 
 const WEBHOOK_URL = `https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=${SITE.domain}`;
 
@@ -19,13 +23,14 @@ const trustItems = [
 ];
 
 export default function QuotePage() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<Record<string, string>>({
     name: "", businessName: "", email: "", phone: "", state: "", serviceType: "", yearsInBusiness: "", message: "", "bot-field": "",
     address: "", city: "", zip: "",
     priorGrossSales: "", priorSubcontractorExpenses: "", priorEmployeeCount: "", priorEmployeePayroll: "",
     estGrossSales: "", estSubcontractorExpenses: "", estEmployeeCount: "", estEmployeePayroll: "", estMaterialCosts: "",
     subsHaveInsurance: "", subsInsuredPercent: "", needUninsuredSubCoverage: "",
-    year_business_started: "", business_description: "", class_code_1: "", class_code_2: "", class_code_3: "", class_code_4: "", class_code_5: "", residential_vs_commercial: "", new_vs_existing_construction: "", largest_projects: "", prior_carrier_name: "", prior_policy_number: "", prior_policy_expiration: "",
+    year_business_started: "", business_description: "", class_code_1: "", class_code_2: "", class_code_3: "", class_code_4: "", class_code_5: "", residential_vs_commercial: "", new_vs_existing_construction: "", largest_projects: "", prior_carrier_name: "", prior_policy_expiration: "",
+    ...ACORD_INITIAL,
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -256,16 +261,14 @@ export default function QuotePage() {
                         <label className={labelClass}>Prior insurance carrier name</label>
                         <input type="text" name="prior_carrier_name" value={formData.prior_carrier_name} onChange={(e) => setFormData({ ...formData, prior_carrier_name: e.target.value })} className={inputClass} />
                       </div>
-                        <div>
-                        <label className={labelClass}>Prior policy number</label>
-                        <input type="text" name="prior_policy_number" value={formData.prior_policy_number} onChange={(e) => setFormData({ ...formData, prior_policy_number: e.target.value })} className={inputClass} />
-                      </div>
                       </div>
                       <div>
                         <label className={labelClass}>Prior policy expiration date</label>
                         <input type="date" name="prior_policy_expiration" value={formData.prior_policy_expiration} onChange={(e) => setFormData({ ...formData, prior_policy_expiration: e.target.value })} className={inputClass} />
                       </div>
                       <p className="text-xs text-center text-mocha/70">No spam. No commitment. We'll only contact you about your quote.</p>
+                      <AcordFields values={formData} onChange={(name, value) => setFormData((prev) => ({ ...prev, [name]: value }))} />
+
                       {error && <p className="text-red-600 text-sm font-medium">{error}</p>}
                       <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-clay-gradient text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
                         {submitting ? "Sending…" : "Request my free quote"}{!submitting && <ArrowRight className="h-5 w-5" />}
